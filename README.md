@@ -2,12 +2,12 @@
 
 Tyred of .DS_Store files everywhere in your repo?
 
-> Here comes DS_Store Patrol! 👮‍♂️👮‍♀️
+> Here comes DS_Store Patrol 👮‍♂️👮‍♀️
 
 
 ### Description
 
-This is a simple **github action** to check whether a `.DS_Store` file has been added in your repo.
+This is a simple **Github Action** to check whether a `.DS_Store` file has been added in your repo.
 
 If you forget to add the `.DS_Store` file in your `.gitignore`, just add this action in your workflow 😃
 
@@ -41,8 +41,8 @@ jobs:
 
 ```
 
-No input is needed. The entire repository will be checked.
+No input is needed. The entire repository will be checked using the `find` command.
 
 ### License
 
-MIT License - Developed by Maxelweb
+MIT License - Developed by [Mariano Sciacco](git.marianosciacco.it)
