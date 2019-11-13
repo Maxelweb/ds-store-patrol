@@ -21,6 +21,14 @@ FOUND_COUNTER=$(find -name '*.DS_Store' | wc -l)
 # Check if there's any .DS_Store file in the repo
 
 if [ $FOUND_COUNTER -gt 0 ]; then
+    
+    echo -e " \
+ ____       _      _         _   _     _     _\n\
+|  _ \  ___| | ___| |_ ___  | |_| |__ (_)___| |\n\
+| | | |/ _ \ |/ _ \ __/ _ \ | __| '_ \| / __| |\n\
+| |_| |  __/ |  __/ ||  __/ | |_| | | | \__ \_|\n\
+|____/ \___|_|\___|\__\___|  \__|_| |_|_|___(_)\n"
+
     echo -e "[${RED}ERROR${NC}] DS_Store DETECTION!! \
           \n\tSomeone included ${RED}$FOUND_COUNTER .DS_Store file(s) ${NC} in the last push / pull request. \
           \n\tWe dont do that here!"
@@ -29,6 +37,13 @@ if [ $FOUND_COUNTER -gt 0 ]; then
 fi
 
 # If nothing has been found, everything ok
+
+echo -e " \
+ _   _ ___ ____ _____\n\
+| \ | |_ _/ ___| ____|\n\
+|  \| || | |   |  _|\n\
+| |\  || | |___| |___\n\
+|_| \_|___\____|_____|\n"
 
 echo -e "[${GREEN}SUCCESS${NC}] No .DS_Store has been found in the last push / pull request."
 exit 0
