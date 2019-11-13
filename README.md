@@ -43,6 +43,6 @@ jobs:
 
 No input is needed. The entire repository will be checked.
 
-### License and support
+### License
 
 MIT License - Developed by Maxelweb
