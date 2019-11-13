@@ -21,16 +21,14 @@ FOUND_COUNTER=$(find -name '*.DS_Store' | wc -l)
 # Check if there's any .DS_Store file in the repo
 
 if [ $FOUND_COUNTER -gt 0 ]; then
-    figlet "Delete this!"
-    echo "[${RED}ERROR${NC}] DS_Store DETECTION!! \
+    echo -e "[${RED}ERROR${NC}] DS_Store DETECTION!! \
           \n\tSomeone included ${RED}$FOUND_COUNTER .DS_Store file(s) ${NC} in the last push / pull request. \
           \n\tWe dont do that here!"
-    echo "[${YELLOW}TIP${NC}] Add .DS_Store in your ${YELLOW}.gitignore ${NC}file"
+    echo -e "[${YELLOW}TIP${NC}] Add .DS_Store in your ${YELLOW}.gitignore ${NC}file"
     exit 1
 fi
 
 # If nothing has been found, everything ok
 
-figlet "NICE"
-echo "[${GREEN}SUCCESS${NC}] No .DS_Store has been found in the last push / pull request."
+echo -e "[${GREEN}SUCCESS${NC}] No .DS_Store has been found in the last push / pull request."
 exit 0
