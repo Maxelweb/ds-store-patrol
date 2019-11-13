@@ -1,6 +1,6 @@
 # DS_Store Patrol
 
-Tyred of .DS_Store files everywhere in your repo?
+Tired of .DS_Store files everywhere in your repo?
 
 > Here comes DS_Store Patrol 👮‍♂️👮‍♀️
 

@@ -1,6 +1,6 @@
 name: 'ds-store-patrol'
 author: 'Mariano Sciacco <maxelweb@gmail.com>'
-description: 'Tyred of .DS_Store files in your repo? DS_Store Patrol will block any .DS_Store file! (or just add them to .gitignore)'
+description: 'Tired of .DS_Store files in your repo? DS_Store Patrol will block any .DS_Store file!'
 runs:
   using: 'docker'
   image: 'Dockerfile'
