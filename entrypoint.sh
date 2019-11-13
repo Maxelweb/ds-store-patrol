@@ -22,7 +22,7 @@ FOUND_COUNTER=$(find -name '*.DS_Store' | wc -l)
 
 if [ $FOUND_COUNTER -gt 0 ]; then
     figlet "Delete this!"
-    echo "[${RED}ERROR${NC}] MacOS USER DETECTED!! \
+    echo "[${RED}ERROR${NC}] DS_Store DETECTION!! \
           \n\tSomeone included ${RED}$FOUND_COUNTER .DS_Store file(s) ${NC} in the last push / pull request. \
           \n\tWe dont do that here!"
     echo "[${YELLOW}TIP${NC}] Add .DS_Store in your ${YELLOW}.gitignore ${NC}file"
