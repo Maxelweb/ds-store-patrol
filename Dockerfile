@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM ubuntu:latest
 
 RUN apt-get install -y figlet find
 
