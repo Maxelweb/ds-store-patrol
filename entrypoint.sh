@@ -22,15 +22,15 @@ FOUND_COUNTER=$(find -name '*.DS_Store' | wc -l)
 
 if [ $FOUND_COUNTER -gt 0 ]; then
     
-    echo -e " \
+    echo -e " \n\
  ____       _      _         _   _     _     _\n\
 |  _ \  ___| | ___| |_ ___  | |_| |__ (_)___| |\n\
 | | | |/ _ \ |/ _ \ __/ _ \ | __| '_ \| / __| |\n\
 | |_| |  __/ |  __/ ||  __/ | |_| | | | \__ \_|\n\
 |____/ \___|_|\___|\__\___|  \__|_| |_|_|___(_)\n"
 
-    echo -e "[${RED}ERROR${NC}] DS_Store DETECTION!! \
-          \n\tSomeone included ${RED}$FOUND_COUNTER .DS_Store file(s) ${NC} in the last push / pull request. \
+    echo -e "[${RED}ERROR${NC}] .DS_Store DETECTION!! \
+          \n\tSomeone included ${RED}$FOUND_COUNTER .DS_Store file(s) ${NC}in the last push / pull request. \
           \n\tWe dont do that here!"
     echo -e "[${YELLOW}TIP${NC}] Add .DS_Store in your ${YELLOW}.gitignore ${NC}file"
     exit 1
@@ -38,7 +38,7 @@ fi
 
 # If nothing has been found, everything ok
 
-echo -e " \
+echo -e " \n\
  _   _ ___ ____ _____\n\
 | \ | |_ _/ ___| ____|\n\
 |  \| || | |   |  _|\n\

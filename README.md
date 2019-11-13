@@ -24,20 +24,20 @@ In your repository, configure your workflow under `.github/workflows/ds-store-pa
 ```yml
 name: DS_Store Patrol
 
-on: push
+on: [push, pull_request]
 
 jobs:
   example-workflow:
-    name: Example workflow for DS_Store Patrol
+    name: Example for DS_Store Patrol
     runs-on: debian-latest
 
     steps:
 
     - name: Checkout repository contents
-      uses: actions/checkout@master
+      uses: actions/checkout@v1
 
     - name: Checking for .DS_Store files
-      uses: Maxelweb/ds-store-patrol@releases/v1
+      uses: Maxelweb/ds-store-patrol@v1
 
 ```
 
