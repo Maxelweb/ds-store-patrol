@@ -13,7 +13,7 @@ If you forget to add the `.DS_Store` file in your `.gitignore`, just add this ac
 
 ### Current version
 
-> v1.0
+> v1
 
 
 ### Example configuration
@@ -45,4 +45,4 @@ No input is needed. The entire repository will be checked using the `find` comma
 
 ### License
 
-MIT License - Developed by [Mariano Sciacco](git.marianosciacco.it)
+MIT License - Developed by [Mariano Sciacco](http://git.marianosciacco.it)
