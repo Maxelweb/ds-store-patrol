@@ -1,6 +1,7 @@
 FROM ubuntu:latest
 
-RUN apt-get install -y figlet find
+RUN apt-get update \
+	&& apt-get install -y figlet find
 
 COPY entrypoint.sh /entrypoint.sh
 
