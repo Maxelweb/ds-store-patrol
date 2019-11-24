@@ -29,7 +29,7 @@ on: [push, pull_request]
 jobs:
   example-workflow:
     name: Example for DS_Store Patrol
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
 
     steps:
 
